@@ -1,13 +1,13 @@
 import pygame
 import random
 
-# Inicialización
+
 pygame.init()
 ANCHO, ALTO = 800, 600
 ventana = pygame.display.set_mode((ANCHO, ALTO))
 pygame.display.set_caption("Breakout      Version 1.0.0")
 
-# Colores
+
 NEGRO = (0, 0, 0)
 BLANCO = (255, 255, 255)
 VERDE = (0, 255, 0)
@@ -16,11 +16,10 @@ COLORES_BLOQUES = [
     (255, 255, 0), (255, 0, 255), (0, 255, 255), (255, 165, 0)
 ]
 
-# Fuente
 fuente = pygame.font.SysFont(None, 60)
 fuente_peque = pygame.font.SysFont(None, 36)
 
-# Función para crear bloques nuevos con colores aleatorios
+
 def crear_bloques():
     bloques_nuevos = []
     for fila in range(5):
@@ -30,7 +29,6 @@ def crear_bloques():
             bloques_nuevos.append((bloque, color))
     return bloques_nuevos
 
-# Función para reiniciar el juego
 def reiniciar_juego():
     global paleta, pelota, vel_pelota, bloques, pausado, perdio
     paleta = pygame.Rect(ANCHO // 2 - 60, ALTO - 20, 120, 10)
@@ -40,12 +38,11 @@ def reiniciar_juego():
     pausado = False
     perdio = False
 
-# Iniciar por primera vez
 reiniciar_juego()
 reloj = pygame.time.Clock()
 corriendo = True
 
-# Bucle principal
+
 while corriendo:
     for evento in pygame.event.get():
         if evento.type == pygame.QUIT:
@@ -83,7 +80,7 @@ while corriendo:
                 vel_pelota[1] *= -1
                 break
 
-    # Dibujar todo
+   
     ventana.fill(NEGRO)
     pygame.draw.rect(ventana, BLANCO, paleta)
     pygame.draw.ellipse(ventana, VERDE, pelota)

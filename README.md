@@ -11,14 +11,7 @@ Este es un sencillo juego estilo **Breakout / Arkanoid** desarrollado en **Pytho
 - Si la pelota cae al fondo de la pantalla, perderás.
 - Cuando pierdas, puedes presionar **R** para reiniciar el juego.
 
----
 
-## 📸 Capturas de pantalla
-
-> *(Agrega aquí capturas si quieres, puedes subir imágenes al repositorio y enlazarlas así:)*  
-> `![Gameplay](ruta/a/la/imagen.png)`
-
----
 
 ## 🛠️ Requisitos
 
