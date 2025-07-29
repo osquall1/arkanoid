@@ -39,3 +39,6 @@ Implementar sistema de niveles.
 Mostrar puntuación y récords.
 
 Modo multibola 🌀
+
+📄 Licencia
+Este proyecto es de código abierto. Puedes modificarlo, aprender y compartir. ¡Diviértete!

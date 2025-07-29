@@ -5,7 +5,7 @@ import random
 pygame.init()
 ANCHO, ALTO = 800, 600
 ventana = pygame.display.set_mode((ANCHO, ALTO))
-pygame.display.set_caption("Breakout con Reinicio")
+pygame.display.set_caption("Breakout      Version 1.0.0")
 
 # Colores
 NEGRO = (0, 0, 0)
